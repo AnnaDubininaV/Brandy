@@ -58,7 +58,7 @@ html(lang="en")
 				section.section.section-features
 					.container
 						.section-body
-							h3.section-title Features
+							h3.section-title#features Features
 							include modules/delimiter.pug
 							.swiper-container.swiper-container2
 								.swiper-wrapper
@@ -75,7 +75,7 @@ html(lang="en")
 				section.section.section-works.position-relative.pb-4
 					.container
 						.section-body
-							h3.section-title Works
+							h3.section-title#works Works
 							include modules/delimiter.pug
 							p.section-description.col-10.mx-auto.mb-5 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
 					ul.nav.nav-pills.justify-content-center(id="pills-tab" role="tablist")
@@ -126,7 +126,7 @@ html(lang="en")
 				section.section.section-team
 					.container
 						.section-body
-							h3.section-title Meet Our Team
+							h3.section-title#team Meet Our Team
 							include modules/delimiter.pug
 							p.section-description.col-10.mx-auto.mb-5 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
 							.swiper-container.swiper-container4
@@ -134,7 +134,7 @@ html(lang="en")
 									.swiper-slide
 										.card.card-team
 											figure.card-image.position-relative
-												img(src="images/team_img/layer_24.jpg" alt="card-image")
+												img(src="images/team_img/Layer_24.jpg" alt="card-image")
 												.card-overlay.position-absolute
 													.card-text
 														p.card-overlay-title Nemo enim ipsam voluptatem quia voluptas 
@@ -147,7 +147,7 @@ html(lang="en")
 									.swiper-slide
 										.card.card-team
 											figure.card-image.position-relative
-												img(src="images/team_img/layer_25.jpg" alt="card-image")
+												img(src="images/team_img/Layer_25.jpg" alt="card-image")
 												.card-overlay.position-absolute
 													.card-text
 														p.card-overlay-title Nemo enim ipsam voluptatem quia voluptas 
@@ -160,7 +160,7 @@ html(lang="en")
 									.swiper-slide
 										.card.card-team
 											figure.card-image.position-relative
-												img(src="images/team_img/layer_26.jpg" alt="card-image")
+												img(src="images/team_img/Layer_26.jpg" alt="card-image")
 												.card-overlay.position-absolute
 													.card-text
 														p.card-overlay-title Nemo enim ipsam voluptatem quia voluptas 
@@ -172,7 +172,7 @@ html(lang="en")
 									.swiper-slide
 										.card.card-team
 											figure.card-image.position-relative
-												img(src="images/team_img/layer_27.jpg" alt="card-image")
+												img(src="images/team_img/Layer_27.jpg" alt="card-image")
 												.card-overlay.position-absolute
 													.card-text
 														p.card-overlay-title Nemo enim ipsam voluptatem quia voluptas 
@@ -184,7 +184,7 @@ html(lang="en")
 								.swiper-pagination4
 				section.section.section-facts.position-relative
 					.section-background.position-absolute
-						img.bg-image(src="images/layer_29.jpg" alt="bg-img")
+						img.bg-image(src="images/Layer_29.jpg" alt="bg-img")
 					.section-overlay
 					.section-foreground
 						.container
@@ -196,38 +196,38 @@ html(lang="en")
 									.line
 								.row.justify-content-center
 									each item in cardFactsList
-										.col-12.mb-3.col-sm-6.col-md-4.col-xl-3.text-light
+										.col-12.mb-3.col-sm-6.col-md-3.text-light
 											+card(item.className, "", item.cardImage, item.body, item.cardTitle, item.descr)
 									
 										
 				section.section.section-discuss
 					.container
 						.section-body
-							h3.section-title Let’s Discuss
+							h3.section-title#contacts Let’s Discuss
 							include modules/delimiter.pug
-							.section-description.col-10.mx-auto.mb-5 Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-								.row.mb-4
-									.contacts.order-2.order-lg-1.col-lg-3
-										p.section-subtitle.text-left.mb-4 Cras at ultrices erat, sed vulputate!	
-										+list(contactList, "list-group list-contact text-left", "primary")
+							p.section-description.col-10.mx-auto.mb-5 Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+							.row.mt-4
+								.contacts.order-2.order-lg-1.col-lg-3.mb-4.mb-lg-0
+									p.section-subtitle.text-left.mb-4 Cras at ultrices erat, sed vulputate!	
+									+list(contactList, "list-group list-contact text-left", "primary")
 																						
-									.form-wrapper.order-1.col-12.col-lg-9.col-xl-8 	
-										h3.form-title.text-left.mb-4 Say hello!	
-										form.form.form-client.col-12.d-flex.flex-wrap.p-0(action="URL")
-											.form-group.col-12.col-lg-6.p-0
-												input(type="text" id="nickname" name="nickname" class="input" placeholder="Name")
-											.form-group.col-12.col-lg-6.p-0.pl-lg-4
-												input(type="email" id="subscribe-email" name="user-email" class="input" placeholder="Email")
-											.form-group.col-12.p-0
-												textarea(id="content" name="content" class="textarea" placeholder="Message")
-											button.btn.col.text-right.d-flex.align-items-center.justify-content-end.p-0(type="submit")
-												span.text-primary.p-2.icon-mail-envelope-closed
-												span Send message
-									.sosial.order-3.col-12.col-lg-8.offset-lg-3.col-lg-1.offset-xl-0.col-xl-1
-										+list(social_list, "list-group list-sosial d-flex flex-row flex-xl-column mx-auto", "social")
+								.form-wrapper.order-1.col-12.col-lg-9.col-xl-8
+									h3.form-title.text-left.mb-4 Say hello!	
+									form.form.form-client.col-12.d-flex.flex-wrap.p-0(action="URL")
+										.form-group.col-12.col-lg-6.p-0
+											input(type="text" id="nickname" name="nickname" class="input" placeholder="Name")
+										.form-group.col-12.col-lg-6.p-0.pl-lg-4
+											input(type="email" id="subscribe-email" name="user-email" class="input" placeholder="Email")
+										.form-group.col-12.p-0
+											textarea(id="content" name="content" class="textarea" placeholder="Message")
+										button.btn.col.text-right.d-flex.align-items-center.justify-content-end.p-0(type="submit")
+											span.text-primary.p-2.icon-mail-envelope-closed
+											span Send message
+								.sosial.p-0.order-3.col-12.col-lg-8.offset-lg-3.col-lg-1.offset-xl-0.col-xl-1
+									+list(social_list, "list-group list-sosial d-flex flex-row flex-xl-column mx-auto", "social")
 					
 				.map.position-relative
-					img(src="images/map.png", alt="map")
+					img(src="images/Map.png", alt="map")
 					.map-icon
 						img(src="images/PIN_1.svg", alt="icon")
 			include modules/footer.pug
