@@ -13,6 +13,15 @@
         background: transparent;
         border: none;
     }
+    & .input {
+        width: 100%;
+        &:focus {
+            outline: none!important;
+            border: none!important;
+            outline-offset: none;
+            box-shadow: 0;
+        }
+    }
 }
 
 .input,
@@ -53,4 +62,33 @@
     appearance: none;
     outline: none;
     background: none !important;
+}
+
+.form-submit {
+    border: 2px solid #ffffff;
+    & .form-group,
+    & .btn {
+        background: transparent;
+        border: none;
+    }
+    & .input.form-group {
+        margin: 0!important;
+        width: 100%;
+        &:focus {
+            padding-left: 20px;
+            outline: none;
+            border: none;
+            background-color: transparent;
+        }
+    }
+}
+
+.form-client {
+    margin-top: 30px;
+}
+
+@media (min-width:1200px) {
+    .form-client {
+        margin-top: 60px;
+    }
 }
