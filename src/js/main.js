@@ -1,10 +1,10 @@
 var swiper = new Swiper('.swiper-container1', {
     spaceBetween: 30,
     effect: 'fade',
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
