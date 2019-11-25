@@ -1,0 +1,13 @@
+include ../mixins
+ul.navbar-nav
+	
+	-
+		let navItems = [
+			{url:"#", text: "Main"},
+			{url:"#", text: "About us"},
+			{url:"#", text: "Portfolio"},
+			{url:"#", text: "Contacts"}];
+
+	each item in navItems
+		li.nav-item.active
+			+link(item.url, item.text)(class="nav-link " + "text-right")

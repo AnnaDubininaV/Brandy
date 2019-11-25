@@ -1,0 +1,15 @@
+.footer {
+    padding: 100px 0;
+    background-color: $primary-color;
+    font-size: 13px;
+    &-title {
+        margin-top: 7px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width:960px) {
+    .footer-description {
+        margin-top: 60px;
+    }
+}
